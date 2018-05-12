@@ -1,3 +1,5 @@
+package pebblegame;
+
 
 import java.util.ArrayList;
 
@@ -31,6 +33,11 @@ public class Vertex {
       return true;
     } 
     return false;
+  }
+
+  public void addChildForPebble(Vertex vertex) {
+	  this.children.add(vertex);
+      --this.numOfPebbles;
   }
 
   public boolean removeChild(Vertex vertex) {
