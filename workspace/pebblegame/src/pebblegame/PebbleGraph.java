@@ -25,10 +25,10 @@ public class PebbleGraph {
 			System.out.println("An IOException occurred. Don't be dumb.");
 			ioe.printStackTrace();
 		}
-		 Collections.shuffle(strings);
-		 for(String str : strings) {
-		 System.out.println(str);
-		 }
+		Collections.shuffle(strings);
+		for (String str : strings) {
+			System.out.println(str);
+		}
 		for (String str : strings) {
 			String[] split = str.split(",");
 			Integer int0 = new Integer(split[0]);
